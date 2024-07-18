@@ -1,0 +1,53 @@
+.content-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h2 {
+  color: #f00;
+  font-size: 18px;
+}
+
+.text-content h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.text-content p {
+  color: #666;
+  margin: 20px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.learn-more {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.learn-more {
+  background: #0033cc;
+  color: #fff;
+}
+
+.image-content {
+  position: relative;
+}
+
+.image-content img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+

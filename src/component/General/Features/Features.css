@@ -1,0 +1,90 @@
+.featurez {
+    text-align: center;
+    padding: 50px;
+    background: floralwhite;
+    font-family: Arial, sans-serif;
+    border-radius: 50px;
+  }
+
+  .featurezz {
+    
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+
+  }
+  
+  .featurezz h2 {
+    color: #ff6b6b;
+   
+  }
+  
+  .feature h1 {
+    /* font-size: 2.5em; */
+    /* margin-bottom: 30px; */
+  }
+  
+  .feature-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .accordion {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .accordion-item {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .accordion-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .accordion-header span {
+    font-size: 1.5em;
+  }
+  
+  .accordion-body {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .accordion-body p {
+    margin: 0 0 20px;
+  }
+  
+  .accordion-body button {
+    background: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .image-section {
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .image-section img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  

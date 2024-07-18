@@ -1,0 +1,79 @@
+.digital-experience {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background: #f7f8fc;
+  display: flex;
+  border-radius: 50px;
+}
+
+.header {
+  margin-bottom: 20px;
+  padding-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-top: 70px;
+}
+
+.header p {
+  color: #6c757d;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.cards {
+  display: flex;
+
+  gap: 20px;
+  margin-left: 10rem;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 20px 0 10px;
+}
+
+.card p {
+  color: #6c757d;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card a {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.icon.analytics {
+  background: url("/path/to/analytics-icon.png") no-repeat center center;
+  background-size: contain;
+}
+
+.icon.coding {
+  background: url("/path/to/coding-icon.png") no-repeat center center;
+  background-size: contain;
+}

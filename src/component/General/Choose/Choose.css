@@ -1,0 +1,40 @@
+.choose-container {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+  }
+
+  .choose {
+    text-align: left;
+    padding-left: 3rem;
+  }
+
+  .choose-why {
+    color: red;
+  }
+  
+  .choose-heading {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .choose-subheading {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  .choose-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .featuring {
+    margin: 20px;
+    text-align: left;
+    display: flex;
+  }
+  
+  

@@ -5,7 +5,7 @@ const ContentTwo = () => {
   return (
     <div className="digital-experience">
       <div className="header">
-        <h1>We Create The World Best <br />Platform  </h1>
+        <h1>We Create The World Best <br />Platform To Grow Skills </h1>
         <p>
           Duis gravida augue velit eu dignissim felis <br />pos quis.Integ ante urna gravida nec molestie.
         </p>

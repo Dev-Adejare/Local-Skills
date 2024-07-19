@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-section">
         <div className="footer-logo">
-          <h2>LOGO</h2>
+          <h2>L$kills</h2>
           <p>Duis gravida augue velit eu dignissim felis pos quis. Inte ante urna gravida.</p>
         </div>
         <div className="footer-links">

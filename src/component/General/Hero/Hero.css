@@ -1,90 +1,33 @@
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* padding: 50px; */
-    background: #ffffff;
-  }
-  
-  .hero-content {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-  }
-  
-  .hero-image {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  .hero-image img {
-    border-radius: 10px;
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 10rem;
-  }
+.Hero {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 6rem;
+  margin-top: 3rem;
+}
 
-  
-  
-  .image-content img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  
-  .hero-text {
-    flex: 2;
-   
-  }
-  
-  .hero-text h1 {
-    font-size: 2.5em;
-    margin-bottom: 5px;
-  }
-  
-  .hero-text p {
-    color: #6c757d;
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 5px;
-  }
-  
-  .features {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  
-  .feature {
-    display: flex;
-    align-items: flex-start;
-    
-  }
-  
-  .check-icon {
-    font-size: 1.5em;
-    color: #4caf50;
-  }
-  
-  .feature h2 {
-    font-size: 1.2em;
-  }
-  
-  .feature p {
-    color: #6c757d;
-    font-size: 1em;
-    line-height: 1.6;
-  }
-  
-  .new-feature {
-    background: #ff6b6b;
-    color: #fff;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.8em;
-    margin-left: 10px;
-  }
-  
-  
+.--Hero-Image img {
+  width: 35rem;
+}
+
+.--Hero-Content {
+  padding: 4rem;
+}
+
+
+.--Hero-Content h2 {
+  font-weight: 2rem;
+  font-size: 2rem;
+}
+
+.--Hero-SubContent {
+  display: flex;
+  gap: 1rem;
+}
+
+.--Hero-SubContent-inner p {
+  margin-top: 10px;
+}
+
+.span {
+ text-decoration: underline red solid;
+}

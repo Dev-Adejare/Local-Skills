@@ -3,7 +3,7 @@
   .login-container {
     height: 100vh;
     width: 100%;
-    background: url('../../../assets/skillscss.jpg') no-repeat center center fixed;
+    background: url('../../../assets/transparent.jpg') no-repeat center center fixed;
     background-size: cover;
     backdrop-filter: blur(5px);
     box-sizing: border-box;
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: #20736b; */
+    /* background: #d1d8dc; */
   }
   
   .login-wrapper {
@@ -59,7 +59,7 @@
     background: rgba(255, 255, 255, 0.8);
     color: #333;
     outline: none;
-    font-size: 16px;
+    font-size: 25px;
   }
   
   .forgot-password {
@@ -108,8 +108,8 @@
   .info-section {
     flex: 1;
     padding: 40px;
-    background: #29a87e;
-    color: white;
+    /* background:  #fff; */
+    color: #333;
     border-top-right-radius: 100px;
   }
   

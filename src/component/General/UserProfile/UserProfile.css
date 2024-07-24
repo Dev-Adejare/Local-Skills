@@ -1,0 +1,94 @@
+.userProfile {
+    background-image: url('../../../assets/pexels-apasaric-1323712.jpg');
+}
+
+.--userProfile-header {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.--userProfile-content {
+    background-image: url('../../../assets/pexels-apasaric-1323712.jpg');
+    min-height: 800px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5rem 0;
+}
+
+.--userProfile-ImageDetails {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.--userProfile-ImageDetails img {
+    width: 20rem;
+    border-radius: 7rem;
+}
+
+.--userProfile-ImageDetails h2 {
+    margin-top: 2rem;
+}
+
+.--userProfile-information {
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    background-color: white;
+}
+
+
+.--userProfile-information-details {
+    margin-left: 10rem;
+    padding-top: 3rem;
+    width: 95rem;
+}
+
+.--userDetails {
+    margin-bottom: 5rem;
+}
+
+.--userDetails-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    margin-top: 30px;
+}
+
+.--Host-main {
+    margin-top: 3rem;
+    display: grid;
+    width: 50rem;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.--Host-details {
+    width: 19rem;
+    background-color: white;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+}
+
+.--Host-details img {
+    width: 18rem;
+    height: 12rem;
+    border-radius: 10px;
+}
+
+.--Host-check {
+    display: flex;
+    justify-content: space-between;
+}
+
+.--Host-rating {
+    display: flex;
+    justify-content: space-between;
+}

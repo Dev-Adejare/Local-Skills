@@ -1,0 +1,92 @@
+.Marketplace {
+    margin-top: 3rem;
+    margin-left: 7rem;
+    width: 103rem;
+}
+
+.--Marketplace-header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.--Marketplace-header-content {
+    display: flex;
+    gap: 20px;
+}
+
+.--Marketplace-image {
+    text-align: center;
+    margin-left: 7rem;
+    margin-top: 3rem;
+}
+
+.--Marketplace-image img {
+    width: 90rem;
+    border-radius: 20px;
+    height: 30rem;
+}
+
+.--Marketplace-search {
+    text-align: center;
+}
+
+.--Marketplace-button-flex {
+    display: flex;
+}
+
+.--Marketplace-search button {
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+
+.--Marketplace-search input {
+    width: 50rem;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.--Marketplace-explore {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+.--Marketplace-CardContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 60px;
+}
+
+.--Marketplace-Card {
+    background: white;
+    color: black;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    padding: 25px;
+    border-radius: 20px;
+    width: 15rem;
+    text-align: center;
+}
+
+.--Marketplace-Card h2 {
+    margin-top: 20px;
+}
+
+.--Marketplace-Card img {
+    width: 10rem;
+    height: 8rem;
+    border-radius: 2rem;
+}
+
+.--Marketplace-inner-Flex {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}

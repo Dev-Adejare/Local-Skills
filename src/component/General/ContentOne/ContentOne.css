@@ -1,28 +1,33 @@
 .content-one {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px;
+  justify-content: space-around;
+  padding: 50px;
+  margin-top: 3rem;
+  padding: 5rem;
+  margin-bottom: 10rem;
   border-radius: 8px;
 }
 
 .text-content {
   max-width: 50%;
+  padding: 2rem;
 }
 
 .text-content h2 {
-  color: #f00;
-  font-size: 18px;
+  color: #ff6b6b;
+  font-size: 50px;
 }
 
 .text-content h1 {
-  font-size: 36px;
+  font-size: 60px;
   color: #333;
 }
 
 .text-content p {
   color: #666;
   margin: 20px 0;
+  font-size: 1.1em;
 }
 
 .buttons {

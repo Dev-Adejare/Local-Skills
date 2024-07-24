@@ -1,46 +1,44 @@
 import React from "react";
 import "./Hero.css";
-import heroImage from "../../../assets/imageSection.jpg";
-
+import HeroImage from "../../../assets/imageSection.jpg";
+import { IoShieldCheckmarkSharp } from "react-icons/io5";
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <div className="hero-content">
-        <div className="hero-image">
-          <img src={heroImage} alt="Hero" />
+    <div className="Hero">
+      <div className="--Hero-Image">
+        <img src={HeroImage} alt="" />
+      </div>
+
+      <div className="--Hero-Content">
+        <h2 className="jj">
+          Empowering Connections On Our <br /> Local Skills Exchange Platform
+        </h2>
+        <p>
+         Welcome to Our Community! Our Platform is designed to Connect individuals worldwide who are passionate about<br />expanding their knowledge, sharing their expertise, and learning from others in a supportive community environment.
+         
+        </p>
+        <div className="--Hero-SubContent">
+          <IoShieldCheckmarkSharp size={25} color="#ff6b6b"/>
+
+          <div className="--Hero-SubContent-inner">
+            <h3>
+              Empowering <span className="span">Global</span> Skill Exchange
+            </h3>
+            <p>
+              We are dedicated to fostering a vibrant community where<br />  individuals can exchange skills, knowledge, and experiences in our community.
+            </p>
+          </div>
         </div>
-        <div className="hero-text">
-          <h1>Manage All Data Through This Dashboard Based App</h1>
-          <p>
-            Duis gravida augue velit eu dignissim felis pos quis. Integ ante
-            urna gravida nec molestie mattis ultrices risus sed fermentum
-            egestas. Sed egestas felis erat faucibus neque semper mattis.
-          </p>
-          <div className="features">
-            <div className="feature">
-              <span className="check-icon">✔</span>
-              <div>
-                <h2>Well Organised Interface</h2>
-                <p>
-                  Duis gravida augue velit eu dignissim felis pos quis. Integ
-                  ante urna gravida nec molestie mattis ultrices risus sed.
-                </p>
-              </div>
-            </div>
-            <div className="feature">
-              <span className="check-icon">✔</span>
-              <div>
-                <h2>
-                  Completely Bug Free{" "}
-                  <span className="new-feature">New Feature</span>
-                </h2>
-                <p>
-                  Vestibulum mollis sapien est, sit amet commodo turpis bibendum
-                  ma. Morbi eleifend nisl eget dui rutrum efficitur.
-                </p>
-              </div>
-            </div>
+        <div className="--Hero-SubContent">
+          <IoShieldCheckmarkSharp size={25} color="#ff6b6b"/>
+          <div className="--Hero-SubContent-inner">
+            <h3>Transform Global Learning through Skill Exchange</h3>
+            <p>
+              We envision a world every invidual, regardless <br />
+              of location or background, has the opportunity to thrive through shared knowledge and skills.
+              
+            </p>
           </div>
         </div>
       </div>

@@ -6,8 +6,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-section">
         <div className="footer-logo">
-          <h2>L$kills</h2>
-          <p>Duis gravida augue velit eu dignissim felis pos quis. Inte ante urna gravida.</p>
+          <h2>SoftSkills</h2>
+          <p>Best online platform where members can post the skills<br /> or services they can offer or need.</p>
         </div>
         <div className="footer-links">
           <div className="footer-column">
@@ -31,8 +31,8 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Get In Touch</h3>
             <ul>
-              <li><a href="tel:(888)2345-6789">📞 (888)2345-6789</a></li>
-              <li><a href="mailto:info@example.com">📧 info@example.com</a></li>
+              <li><a href="tel:(888)2345-6789">📞 (+234)8067986920</a></li>
+              <li><a href="mailto:info@example.com">📧 sodiqkehinde64@yahoo.com</a></li>
             </ul>
           </div>
         </div>

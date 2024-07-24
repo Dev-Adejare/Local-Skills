@@ -9,7 +9,7 @@ const ContentOne = () => {
         <h2>Boost Your Skills and Services</h2>
         <h1>Versatile App For Locals <br /> Skills and Exchange Platform</h1>
         <p>
-          Best Online Platform Where Members Can Post The Skills<br /> or Services They Can Offer or Need.
+          Best online platform where members can post the skills<br /> or services they can offer or need.
         </p>
         <div className="buttons">
           <button className="learn-more">Learn More</button>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Register.css';
+import { Link } from 'react-router-dom';
 import imageSection from "../../../assets/Soft-skills(2).gif";
 
 
@@ -21,7 +22,9 @@ const Register = () => {
               <input type="password" id="password" name="password" placeholder="********" />
             </div>
             <button type="submit" className="create-account-button">Create Account</button>
-            <button type="button" className="sign-in-button">Sign in</button>
+            <Link to="/login">
+              <button type="button" className="sign-in-button">Sign in</button>
+            </Link>
           </form>
         </div>
         <div className="illustration-container">

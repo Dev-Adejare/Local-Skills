@@ -3,38 +3,45 @@
   margin: 0 auto;
   padding: 4rem;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #666;
 }
 
-.--about-us-welcome{
-
+.about-us-wel {
+  padding-bottom: 1rem;
 }
 
-.about-us-container h1, .about-us-container h2 {
-  color: #2c3e50;
-  text-align: center;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  font-style:unset;
+.about-us-container h1,
+.about-us-container h2 {
+  color: #ff6b6b;
+  text-align: left;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: unset;
   font-weight: 500;
-  font-size: 2.2rem;
+  font-size: 2.7rem;
 }
 
 .about-us-container p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.about-us-container ul, .about-us-container ol {
+.about-us-container ul,
+.about-us-container ol {
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
-.about-us-container ul li, .about-us-container ol li {
+.about-us-container ul li,
+.about-us-container ol li {
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
-.about-us-container ul li strong, .about-us-container ol li strong {
+.about-us-container ul li strong,
+.about-us-container ol li strong {
   color: #2980b9;
+  font-size: 20px;
 }
 
 .about-us-container ul {
@@ -72,8 +79,7 @@
 
 
 
-
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .about-us-container {
     padding: 10px;
   }
@@ -85,4 +91,4 @@
   .about-us-container p {
     font-size: 14px;
   }
-}
+} */

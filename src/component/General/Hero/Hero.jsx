@@ -11,7 +11,7 @@ const Hero = () => {
       </div>
 
       <div className="--Hero-Content">
-        <h2 className="jj">
+        <h2 >
           Empowering Connections On Our <br /> Local Skills Exchange Platform
         </h2>
         <p>

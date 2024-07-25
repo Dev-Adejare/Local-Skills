@@ -54,7 +54,7 @@ const UserProfile = () => {
                 </div>
                 <div className="--Host-rating">
                   <div>
-                    <h2>A. Adebayo</h2>
+                    {/* <h2>A. Adebayo</h2> */}
                   </div>
                   <div><h2><MdStars />0.0</h2></div>
                 </div>
@@ -73,7 +73,7 @@ const UserProfile = () => {
                 </div>
                 <div className="--Host-rating">
                   <div>
-                    <h2>A. Adebayo</h2>
+                    {/* <h2>A. Adebayo</h2> */}
                   </div>
                   <div><h2><MdStars />0.0</h2></div>
                 </div>
@@ -92,7 +92,7 @@ const UserProfile = () => {
                 </div>
                 <div className="--Host-rating">
                   <div>
-                    <h2>A. Adebayo</h2>
+                    {/* <h2>A. Adebayo</h2> */}
                   </div>
                   <div><h2><MdStars />0.0</h2></div>
                 </div>
@@ -111,7 +111,7 @@ const UserProfile = () => {
                 </div>
                 <div className="--Host-rating">
                   <div>
-                    <h2>A. Adebayo</h2>
+                    {/* <h2>A. Adebayo</h2> */}
                   </div>
                   <div><h2><MdStars />0.0</h2></div>
                 </div>
@@ -130,7 +130,7 @@ const UserProfile = () => {
                 </div>
                 <div className="--Host-rating">
                   <div>
-                    <h2>A. Adebayo</h2>
+                    {/* <h2>A. Adebayo</h2> */}
                   </div>
                   <div><h2><MdStars />0.0</h2></div>
                 </div>

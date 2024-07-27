@@ -3,7 +3,6 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 import imageSection from "../../../assets/Soft-skills(2).gif";
 
-
 const Login = () => {
   return (
     <div className="login-container">
@@ -31,17 +30,17 @@ const Login = () => {
             <a href="#" className="forgot-password">
               Forgot Password
             </a>
-            
-              <button type="submit" className="sign-in-button">Sign in</button>
-            
-            {/* <div className="social-login">
-              <img src="/path-to-google-icon.png" alt="Google" />
-              <img src="/path-to-github-icon.png" alt="GitHub" />
-              <img src="/path-to-facebook-icon.png" alt="Facebook" />
-            </div> */}
-            <Link to="/register">
-              <a href="#" className="create-account">Create an account</a>
-            </Link>  
+
+            <button type="submit" className="sign-in-button">
+              Sign in
+            </button>
+
+            <p style={{ marginTop: 8, fontSize: 18 }}>
+              Don&apos;t have an account?{" "}
+              <a href="/register" style={{ color: "#20736b" }}>
+                Sign Up
+              </a>
+            </p>
           </form>
         </div>
         <div className="info-section">
@@ -60,9 +59,6 @@ const Login = () => {
             </p>
           </div>
         </div>
-            {/* <div className="illustration-container">
-              <img src={imageSection} alt="illustration" />
-            </div> */}
       </div>
     </div>
   );

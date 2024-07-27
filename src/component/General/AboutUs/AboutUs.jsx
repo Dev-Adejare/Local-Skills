@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./AboutUs.css";
@@ -178,8 +179,10 @@ const AboutUs = () => {
           teach.
         </p>
 
-        <div className="buttons">
-          <button className="learn-more">Learn More</button>
+        <div className="--about-btn">
+          <Link to="/register">
+            <button className="--about-learn-more">Join Us</button>
+          </Link>
         </div>
       </div>
       <div className="--about-footer">

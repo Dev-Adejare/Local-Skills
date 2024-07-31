@@ -25,9 +25,7 @@ const ContentTwo = () => {
           <p>
             Welcome to our Community! Our platform is designed to connect individuals worldwide who are passionate about expanding their expertise and learning from others in a supportive community environment.
           </p>
-
-          <Link to="/aboutUs"><a href="#learn-more-coding">Learn More</a></Link>
-          
+          <a href="#learn-more-coding">Learn More</a>
         </div>
       </div>
     </div>

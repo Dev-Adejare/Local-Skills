@@ -6,6 +6,8 @@ import Login from "./pages/Auth/Login/Login";
 import MarketPlace from "./component/General/MarketPlace/MarketPlace";
 import About from "./component/General/AboutUs/AboutUs";
 import UserProfile from "./component/General/UserProfile/UserProfile";
+import BlogPage from "./component/General/BlogPage/BlogPage";
+import EditProfile from "./component/General/UserProfile/EditProfile";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Route path="/marketPlace" element={<MarketPlace />} />
         <Route path="/aboutUs" element={<About />} />
         <Route path="/userProfile" element={<UserProfile/>}/>
+        <Route path="/editProfile" element= {<EditProfile/>}/>
+        <Route path="/Blog" element={<BlogPage/>}/>
       </Routes>
     </BrowserRouter>
   );

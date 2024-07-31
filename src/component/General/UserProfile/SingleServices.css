@@ -1,0 +1,29 @@
+/* .singleServices {
+    
+} */
+  
+.services-imageOne {
+    display: flex;
+    gap: 2rem;
+}
+
+.services-imageOne img {
+    width: 20rem;
+    height: 30rem;
+}
+
+.services-image-flex {
+    display: flex;
+    margin-top: 10.5rem;
+    gap: 2rem;
+}
+
+.services-image-flex img {
+    width: 15rem;
+    height: 10rem;
+}
+
+.--services-details h3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

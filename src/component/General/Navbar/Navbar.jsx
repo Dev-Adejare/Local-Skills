@@ -7,17 +7,19 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo">SoftSkills</div>
       <ul className="menu">
-        <li className="menu-item">Home</li>
+        <Link to="/"><li className="menu-item">Home</li></Link>
         <li className="menu-item">Explore Skills</li>
         <li className="menu-item">Blog</li>
         <li className="menu-item">My Skills</li>
         <li className="menu-item">Contact</li>
-        <li className="menu-item">Community</li>
+        <Link to="/aboutUs"><li className="menu-item">About Us</li></Link>
       </ul>
       <Link to="/register">
         <button className="sign-up-button">Sign Up</button>
       </Link>
     </nav>
+
+    
   );
 };
 

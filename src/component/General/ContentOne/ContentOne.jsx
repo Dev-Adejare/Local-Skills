@@ -37,7 +37,9 @@ const ContentOne = () => {
           <br /> or services they can offer or need.
         </p>
         <div className="buttons">
-          <button className="learn-more">Learn More</button>
+          <Link to="/aboutUs">
+            <button className="learn-more">Learn More</button>
+          </Link>
         </div>
       </div>
       <div className="image-content">

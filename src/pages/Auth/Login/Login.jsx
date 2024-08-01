@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-wrapper">
-        <div className="form-section">
+        <div className="--login-form-section">
           <h1>Welcome back</h1>
           <p>Please Enter your Account details</p>
           <form>
@@ -31,7 +31,7 @@ const Login = () => {
               Forgot Password
             </a>
 
-            <button type="submit" className="sign-in-button">
+            <button type="submit" className="--sign-in-button">
               Sign in
             </button>
 

@@ -1,141 +1,144 @@
 .Marketplace {
-    margin-top: 3rem;
-    margin-left: 7rem;
-    width: 103rem;
+  margin-top: 3rem;
+  margin-left: 7rem;
+  width: 103rem;
 }
 
 .--Marketplace-header {
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .--Marketplace-header-content {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .--Marketplace-image {
-    text-align: center;
-    margin-left: 7rem;
-    margin-top: 3rem;
+  display: flex;
+  text-align: center;
+  margin-left: 7rem;
+  margin-top: 3rem;
 }
+
+
 
 .--Marketplace-image img {
-    width: 90rem;
-    border-radius: 20px;
-    height: 30rem;
+  width: 90rem;
+  border-radius: 20px;
+  height: 30rem;
 }
 
+
+
 .--Marketplace-search {
-    text-align: center;
+  text-align: center;
 }
 
 .--Marketplace-button-flex {
-    display: flex;
+  display: flex;
 }
 
 .--Marketplace-search button {
-    padding: 15px;
-    border-radius: 20px;
-    margin-top: 3rem;
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: 3rem;
 }
 
 .--Marketplace-search input {
-    width: 50rem;
-    border: none;
-    outline: none;
-    background: none;
+  width: 50rem;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 .--Marketplace-explore {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
 }
 
 .--Marketplace-CardContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 10rem;
-    margin-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  margin-left: 60px;
 }
 
 .--Marketplace-Card {
-    background: white;
-    color: black;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    padding: 25px;
-    border-radius: 20px;
-    width: 15rem;
-    text-align: center;
+  background: white;
+  color: black;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 25px;
+  border-radius: 20px;
+  width: 15rem;
+  text-align: center;
 }
 
 .--Marketplace-Card h2 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .--Marketplace-Card img {
-    width: 10rem;
-    height: 8rem;
-    border-radius: 2rem;
+  width: 10rem;
+  height: 8rem;
+  border-radius: 2rem;
 }
 
 .--Marketplace-inner-Flex {
-    display: flex;
-    margin-top: 50px;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
 }
 
 .--Marketplace-inner-Flex button {
-    background: black;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    width: 7rem;
-    font-size: 1rem;
-    border-radius: 5px;
+  background: black;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 7rem;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
 .--marketplace-popular {
-    margin-top: 4rem;
-    margin-bottom: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
 }
 
 .--marketplace-popular-flex {
-    display: flex;
-    gap: 2rem;
-
+  display: flex;
+  gap: 2rem;
 }
 
 .--marketplace-popular-card {
-    color: white;
-    background-color: green;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    padding: 25px;
-    border-radius: 20px;
-    width: 23rem;
-    margin-top: 3rem;
+  color: white;
+  background-color: green;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 25px;
+  border-radius: 20px;
+  width: 23rem;
+  margin-top: 3rem;
 }
 
 .--marketplace-popular-card h1 {
-    margin-top: 10px;
-    margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .--marketplace-popular-card h2 {
-    color: white;
+  color: white;
 }
 
 .--marketplace-popular-card img {
-    width: 20rem;
-    border-radius: 20px;
-    height: 20rem;
+  width: 20rem;
+  border-radius: 20px;
+  height: 20rem;
 }

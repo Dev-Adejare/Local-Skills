@@ -1,7 +1,5 @@
 import React from "react";
 import "./Login.css";
-import { Link } from "react-router-dom";
-import imageSection from "../../../assets/Soft-skills(2).gif";
 
 const Login = () => {
   return (

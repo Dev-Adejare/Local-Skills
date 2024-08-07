@@ -8,6 +8,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { CiSearch } from "react-icons/ci";
 import { IoMdNotifications } from "react-icons/io";
+import { MdStars } from "react-icons/md";
+
 import "./MarketPlace.css";
 import Footer from "../Footer/Footer";
 
@@ -26,14 +28,10 @@ const MarketPlace = () => {
             </div>
           </div>
         </div>
-        {/* <div className="--Marketplace-image">
-          <img src={marketAds} alt="" />
-        </div> */}
-          
-           
-           <div className="about-carousel">
+
+        <div className="about-carousel">
           <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}>
-            <div>
+            <div className="carosel-image">
               <img src={marketAds} alt="Skill exchange 1" />
             </div>
             <div>
@@ -50,8 +48,6 @@ const MarketPlace = () => {
             </div>
           </Carousel>
         </div>
-
-
 
         <div className="--Marketplace-search">
           <button>
@@ -83,7 +79,12 @@ const MarketPlace = () => {
               <h3>
                 <button>Contact</button>
               </h3>
-              <div>***</div>
+              {/* <div>
+                <h2>
+                  <MdStars />
+                  0.0
+                </h2>
+              </div> */}
             </div>
           </div>
           {/* others */}

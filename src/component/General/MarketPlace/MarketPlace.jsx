@@ -8,7 +8,6 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { CiSearch } from "react-icons/ci";
 import { IoMdNotifications } from "react-icons/io";
-import { MdStars } from "react-icons/md";
 
 import "./MarketPlace.css";
 import Footer from "../Footer/Footer";

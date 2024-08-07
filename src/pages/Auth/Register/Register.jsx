@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Register.css";
 import { Link } from "react-router-dom";
 import imageSection from "../../../assets/Soft-skills(2).gif";
+import PasswordInput from "../../../component/General/PasswordInput/PasswordInput";
 
 const Register = () => {
   const [countries, setCountries] = useState([]);
@@ -62,7 +63,7 @@ const Register = () => {
               </select>
             </div>
             <div className="input-container">
-              <input
+              <PasswordInput
                 type="password"
                 id="password"
                 name="password"
@@ -70,7 +71,7 @@ const Register = () => {
               />
             </div>
             <div className="input-container">
-              <input
+              <PasswordInput
                 type="password"
                 id="password"
                 name="password"
@@ -80,14 +81,12 @@ const Register = () => {
             <button type="submit" className="create-account-button">
               Create Account
             </button>
-            {/* <Link to="/login"> */}
             <p style={{ marginTop: 8, fontSize: 18 }}>
               Already a user?{" "}
               <a href="/login" style={{ color: "#20736b" }}>
                 Login
               </a>
             </p>
-            {/* </Link> */}
           </form>
         </div>
         <div className="illustration-container">

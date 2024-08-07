@@ -6,6 +6,9 @@ import "./BlogPage.css";
 import blogImage1 from "../../../assets/image2.png";
 import blogImage2 from "../../../assets/imageSection.jpg";
 import blogImage3 from "../../../assets/Soft skills (3).gif";
+import blogImage4 from "../../../assets/Soft-skills(2).gif";
+import blogImage5 from "../../../assets/Soft-skills.gif";
+import blogImage6 from "../../../assets/Soft skills (3).gif";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 
@@ -34,19 +37,19 @@ const BlogPage = () => {
           >
             <div>
               <img src={blogImage1} alt="Effective Communication" />
-              <p className="legend">
+              <p className="carousel-slide-legend">
                 Effective Communication: The Foundation of Community Building
               </p>
             </div>
             <div>
               <img src={blogImage2} alt="Leadership and Teamwork" />
-              <p className="legend">
+              <p className="carousel-slide-legend">
                 Leadership and Teamwork: Driving Success Together
               </p>
             </div>
             <div>
               <img src={blogImage3} alt="Emotional Intelligence" />
-              <p className="legend">
+              <p className="carousel-slide-legend">
                 Emotional Intelligence: Understanding and Supporting Each Other
               </p>
             </div>
@@ -54,8 +57,9 @@ const BlogPage = () => {
         </div>
 
         <section className="blog-content">
-          <h1>Why Soft Skills Matter</h1>
-          <p>
+        <div>
+        <h1>Why Soft Skills Matter</h1>
+          <p className="blog-intro">
             Soft skills, such as communication, empathy, and adaptability, are
             critical in fostering a cooperative and supportive environment. <br />
             Unlike hard skills, which are specific to certain tasks, soft skills
@@ -80,9 +84,32 @@ const BlogPage = () => {
               their strengths to achieve common goals.
             </li>
           </ul>
+          <div className="blog-carousel">
+          <Carousel
+            showArrows={true}
+            autoPlay={true}
+            infiniteLoop={true}
+            className="carousel-styles"
+          >
+            <div>
+              <img src={blogImage4} alt="Effective Communication" />
+              
+            </div>
+            <div>
+              <img src={blogImage5} alt="Leadership and Teamwork" />
+             
+            </div>
+            <div>
+              <img src={blogImage6} alt="Emotional Intelligence" />
+              
+            </div>
+          </Carousel>
+        </div>
+        </div>
 
-          <h1>How to Develop Your Soft Skills</h1>
-          <p>
+        <div>
+        <h1>How to Develop Your Soft Skills</h1>
+          <p className="blog-intro">
             Developing soft skills is a continuous process that involves
             self-awareness, practice, and feedback. Here are some tips to get
             started:
@@ -109,6 +136,7 @@ const BlogPage = () => {
               adapt to different situations.
             </li>
           </ol>
+        </div>
         </section>
 
         <div className="blog-call-to-action">

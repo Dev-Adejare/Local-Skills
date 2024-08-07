@@ -1,5 +1,6 @@
 import React from "react";
 import "./Login.css";
+import PasswordInput from "../../../component/General/PasswordInput/PasswordInput";
 
 const Login = () => {
   return (
@@ -14,15 +15,15 @@ const Login = () => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Johndoe@gmail.com"
+                placeholder="Email address"
               />
             </div>
             <div className="input-container">
-              <input
+              <PasswordInput
                 type="password"
                 id="password"
                 name="password"
-                placeholder="********"
+                placeholder="Password"
               />
             </div>
             <a href="#" className="forgot-password">

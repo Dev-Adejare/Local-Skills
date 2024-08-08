@@ -1,37 +1,100 @@
-import React from "react";
+import React, { useState, useCallback, useContext } from "react";
 import "./Login.css";
 import PasswordInput from "../../../component/General/PasswordInput/PasswordInput";
+import {Navigate, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import axios from "axios";
+import { UserContext } from "../../../../context/userContext";
 
 const Login = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const [formValidMessage, setFormValidMessage] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const navigate = useNavigate();
+  const { setUser } = useContext(UserContext);
+
+  const handleInputChange = useCallback((e) => {
+    setFormValidMessage("");
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  }, []);
+
+  const loginUser = useCallback(
+    (e) => {
+      e.preventDefault();
+
+      const { email, password } = formData;
+
+      if (!email || !password) {
+        setFormValidMessage("All fields are required");
+        return;
+      }
+      setIsSubmitting(true);
+
+      axios
+        .post("http://localhost:5173/login", formData)
+        .then((response) => {
+          setUser(response.data);
+          setIsSubmitting(false);
+          toast.success("Login successful");
+          navigate("/homedash", { state: { user: response.data } });
+        })
+        .catch((error) => {
+          setIsSubmitting(false);
+          const message =
+            error.response?.status === 400
+              ? "Invalid Login Credentials."
+              : "Server error, unable to Login user.";
+          setFormValidMessage(message);
+        });
+    },
+    [formData, Navigate, setUser]
+  );
+
   return (
     <div className="login-container">
       <div className="login-wrapper">
         <div className="--login-form-section">
           <h1>Welcome back</h1>
           <p>Please Enter your Account details</p>
-          <form>
+          <form onSubmit={loginUser}>
             <div className="input-container">
+              <label htmlFor="email">Email:</label>
+
               <input
                 type="email"
-                id="email"
+                className="input"
                 name="email"
-                placeholder="Email address"
+                placeholder="Enter your email"
+                required
+                value={formData.email}
+                onChange={handleInputChange}
               />
             </div>
             <div className="input-container">
+              <label htmlFor="password">Password:</label>
+
               <PasswordInput
-                type="password"
-                id="password"
-                name="password"
                 placeholder="Password"
+                name="password"
+                value={formData.password}
+                onChange={handleInputChange}
               />
             </div>
             <a href="#" className="forgot-password">
               Forgot Password
             </a>
 
-            <button type="submit" className="--sign-in-button">
-              Sign in
+            <button className="--sign-in-button" disabled={isSubmitting}>
+              {isSubmitting ? "Signing In..." : "Sign In"}
             </button>
 
             <p style={{ marginTop: 8, fontSize: 18 }}>
@@ -41,6 +104,10 @@ const Login = () => {
               </a>
             </p>
           </form>
+
+          {formValidMessage && (
+            <p className="error-message">{formValidMessage}</p>
+          )}
         </div>
         <div className="info-section">
           <h2>What's our Skill-Seekers Said!</h2>

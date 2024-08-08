@@ -1,10 +1,11 @@
-import React, { useState, useCallback, useContext } from "react";
+import React, { useEffect, useState, useCallback, useContext } from "react";
 import "./Login.css";
 import PasswordInput from "../../../component/General/PasswordInput/PasswordInput";
 import {Navigate, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { UserContext } from "../../../../context/userContext";
+import Loader from "../../../component/General/Loader/Loader";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,8 @@ const Login = () => {
 
   const [formValidMessage, setFormValidMessage] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [loading, setLoading] = useState(true);
+
 
   const navigate = useNavigate();
   const { setUser } = useContext(UserContext);
@@ -45,7 +48,7 @@ const Login = () => {
           setUser(response.data);
           setIsSubmitting(false);
           toast.success("Login successful");
-          navigate("/homedash", { state: { user: response.data } });
+          navigate("/marketPlace", { state: { user: response.data } });
         })
         .catch((error) => {
           setIsSubmitting(false);
@@ -59,7 +62,15 @@ const Login = () => {
     [formData, Navigate, setUser]
   );
 
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000);
+  }, [])
+
   return (
+    <>
+     {loading ? (
+        <Loader />
+      ) : (
     <div className="login-container">
       <div className="login-wrapper">
         <div className="--login-form-section">
@@ -89,9 +100,9 @@ const Login = () => {
                 onChange={handleInputChange}
               />
             </div>
-            <a href="#" className="forgot-password">
+            {/* <a href="#" className="forgot-password">
               Forgot Password
-            </a>
+            </a> */}
 
             <button className="--sign-in-button" disabled={isSubmitting}>
               {isSubmitting ? "Signing In..." : "Sign In"}
@@ -127,6 +138,8 @@ const Login = () => {
         </div>
       </div>
     </div>
+      )}
+    </>
   );
 };
 

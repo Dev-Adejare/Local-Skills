@@ -4,6 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import { UserProvider } from "../context/userContext.jsx";
 import { ToastContainer } from'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 
 
 

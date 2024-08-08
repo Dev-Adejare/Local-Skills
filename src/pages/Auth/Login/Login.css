@@ -55,7 +55,7 @@ label {
   margin-bottom: 12px;
 }
 
- .input-container input {
+.input-container input {
   width: 100%;
   padding: 8px 12px;
   border: none;
@@ -136,9 +136,7 @@ cite {
 }
 
 .additional-info {
-  /* background: white; */
   background: rgba(255, 255, 255, 0.7);
-
   color: #333;
   padding: 20px;
   border-radius: 10px;

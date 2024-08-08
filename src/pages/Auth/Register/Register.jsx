@@ -142,7 +142,7 @@ const Register = () => {
                     <input
                       type="text"
                       className="input"
-                      name="name"
+                      name="fullname"
                       placeholder="Enter Fullname"
                       onChange={handleInputChange}
                       value={formData.fullname}
@@ -201,6 +201,7 @@ const Register = () => {
                     name="password"
                     value={formData.password}
                     onChange={handleInputChange}
+                    autocomplete="new-password" 
                   />
                 </div>
                 <div className="input-container">
@@ -215,6 +216,7 @@ const Register = () => {
                       toast.error("Cannot paste into input field");
                       return false;
                     }}
+                    autocomplete="new-password" 
                   />
                 </div>
                 <div className="card">

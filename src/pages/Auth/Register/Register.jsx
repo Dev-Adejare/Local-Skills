@@ -74,28 +74,28 @@ const Register = () => {
     (event) => {
       event.preventDefault();
 
-      const { username, fullname, email, age, gender, password, password2 } =
+      const { username, fullname, email, country, age, gender, password, password2 } =
         formData;
 
-      if (!username ||!fullname ||!email ||!age ||!gender || !password || !password2) {
-        setFormValidMessage("All fields are required");
+      if (!username ||!fullname ||!email ||!country ||!age ||!gender || !password || !password2) {
+        setFormValidMessage("All fields are required 🚫");
         return;
       }
 
       if (password !== password2) {
-        setFormValidMessage("Password does not match!");
+        setFormValidMessage("Password does not match!🚫");
         return;
       }
 
       setIsSubmitting(true);
 
       axios
-        .post(`http://localhost:5173/register`, formData)
+        .post(`http://localhost:3000/api/users/register`, formData)
         .then((response) => {
           setUser(response.data);
           setIsSubmitting(false);
           setFormCompleted(true);
-          toast.success("Registration Successful");
+          toast.success("Registration Successful ✅");
           navigate("/login", { state: { user: response.data } });
         })
         .catch((error) => {
@@ -185,7 +185,7 @@ const Register = () => {
                   </div>
                 </div>
                 <div className="select-container">
-                  <select id="country" name="country" placeholder="Country">
+                  <select id="country" name="country" onChange={handleInputChange} placeholder="Country">
                     <option value="Nigeria">select your country ⬇</option>
                     {countries.map((country) => (
                       <option key={country} value={country}>
@@ -255,10 +255,11 @@ const Register = () => {
                     Login
                   </a>
                 </p>
-              </form>
-              {formValidMessage && (
+                {formValidMessage && (
                 <p className="error-message">{formValidMessage}</p>
               )}
+              </form>
+             
             </div>
             <div className="illustration-container">
               <img src={imageSection} alt="illustration" />
